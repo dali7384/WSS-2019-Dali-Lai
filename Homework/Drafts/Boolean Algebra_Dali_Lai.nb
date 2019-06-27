@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    187936,       3806]
-NotebookOptionsPosition[    185830,       3756]
-NotebookOutlinePosition[    186822,       3790]
-CellTagsIndexPosition[    186752,       3785]
+NotebookDataLength[    188126,       3812]
+NotebookOptionsPosition[    185992,       3761]
+NotebookOutlinePosition[    187014,       3796]
+CellTagsIndexPosition[    186944,       3791]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1547,8 +1547,8 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
                 Offset[{10, -10}, 
                  Scaled[{0, 1}]]], True, {}]},
              
-             ImageSizeCache->{{2.5857864376268935`, 
-              388.4142135623731}, {-283.4142135623731, 19.414213562373106`}},
+             ImageSizeCache->{{1.5857864376268935`, 
+              311.4142135623731}, {-226.81421356237308`, 16.01421356237313}},
              TrackedSymbols:>{WSM`Typeset`PackagePrivate`p}], 
             Which[WSM`Typeset`PackagePrivate`appearanceState === "Minimal", 
               WSM`Typeset`PackagePrivate`p = {
@@ -1692,8 +1692,8 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
               WSM`Typeset`PackagePrivate`p = 
                WSM`Typeset`PackagePrivate`expandedprimitives; Null]; Null,
             
-            ImageSizeCache->{{2.5857864376268935`, 
-             388.4142135623731}, {-283.4142135623731, 19.414213562373106`}},
+            ImageSizeCache->{{1.5857864376268935`, 
+             311.4142135623731}, {-226.81421356237308`, 16.01421356237313}},
             SynchronousUpdating->False,
             TrackedSymbols:>{WSM`Typeset`PackagePrivate`appearanceState}],
            
@@ -1775,7 +1775,7 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
                KernelExecute[
                 WSMLink`WSMSimulationCenter["Model1"]], MenuEvaluator -> 
                Automatic]}}},
-        ImageSize->{93, 93},
+        ImageSize->{93., 93.},
         PlotRange->{{-10, 83}, {-26, 67}}], ",", 
        RowBox[{"{", 
         RowBox[{"0", ",", "0.5"}], "}"}]}], "]"}], ",", 
@@ -2634,7 +2634,9 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
                    Automatic, Method -> "Preemptive"], TraditionalForm]], 
                 Offset[{10, -10}, 
                  Scaled[{0, 1}]]], True, {}]},
-             ImageSizeCache->{{-0.5, 92.5}, {-49.5, 43.5}},
+             
+             ImageSizeCache->{{-0.4000000000000057, 74.}, {-39.39999999999999,
+               35.000000000000014`}},
              TrackedSymbols:>{WSM`Typeset`PackagePrivate`p}], 
             Which[WSM`Typeset`PackagePrivate`appearanceState === "Minimal", 
               WSM`Typeset`PackagePrivate`p = {
@@ -2723,8 +2725,8 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
                   RectangleBox[{
                     Part[WSM`Typeset`PackagePrivate`expandedrange, 1, 1], 
                     Part[WSM`Typeset`PackagePrivate`expandedrange, 2, 1] + 
-                    1}, {Part[WSM`Typeset`PackagePrivate`expandedrange, 1, 2] - 
-                    1, 
+                    1}, {
+                   Part[WSM`Typeset`PackagePrivate`expandedrange, 1, 2] - 1, 
                     Part[WSM`Typeset`PackagePrivate`expandedrange, 2, 2]}, 
                    RoundingRadius -> Offset[5]]}, 
                  InsetBox[
@@ -2768,6 +2770,7 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
                     StyleBox[
                     "Model1", FontSize -> 9, FontFamily -> "Helvetica", 
                     StripOnInput -> False], TraditionalForm], 
+                    
                     Offset[{12, 12}, {
                     WSM`Typeset`PackagePrivate`leftmost$, 
                     WSM`Typeset`PackagePrivate`bottommost$}], {-1, 0}]}]}]; 
@@ -2776,7 +2779,9 @@ kv7eZOXV90maafoQ2dZcV364fj5KRapm1+1/uX4DOnc/KA==
               "Expanded", 
               WSM`Typeset`PackagePrivate`p = 
                WSM`Typeset`PackagePrivate`expandedprimitives; Null]; Null,
-            ImageSizeCache->{{-0.5, 92.5}, {-49.5, 43.5}},
+            
+            ImageSizeCache->{{-0.4000000000000057, 74.}, {-39.39999999999999, 
+             35.000000000000014`}},
             SynchronousUpdating->False,
             TrackedSymbols:>{WSM`Typeset`PackagePrivate`appearanceState}],
            
@@ -3768,6 +3773,7 @@ DockedCells->{
       RGBColor[0.97, 0.83, 0.35], FontFamily -> "Source Sans Pro", FontSize -> 
       40]}], CellFrameMargins -> 10, Background -> 
    RGBColor[0.12, 0.14, 0.15]]},
+Magnification:>0.8 Inherited,
 FrontEndVersion->"12.0 \:95dc\:65bc  Microsoft Windows (64-bit) (2019\:5e744\
 \:67088\:65e5)",
 StyleDefinitions->"Default.nb"
@@ -3778,35 +3784,35 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Title"->{
-  Cell[580, 22, 469, 6, 96, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+  Cell[580, 22, 469, 6, 77, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
    CellTags->"Title"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 186613, 3779}
+ {"Title", 186805, 3785}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 469, 6, 96, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+Cell[580, 22, 469, 6, 77, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
  CellTags->"Title"],
-Cell[1052, 30, 435, 7, 46, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
-Cell[1490, 39, 610, 10, 60, "Text",ExpressionUUID->"efe9b06f-68d8-4084-bf8d-3f27a6c14623"],
-Cell[2103, 51, 778, 14, 100, "Text",ExpressionUUID->"7ceb4375-1b97-4694-8bf8-d49d8401e12a"],
+Cell[1052, 30, 435, 7, 36, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
+Cell[1490, 39, 610, 10, 49, "Text",ExpressionUUID->"efe9b06f-68d8-4084-bf8d-3f27a6c14623"],
+Cell[2103, 51, 778, 14, 80, "Text",ExpressionUUID->"7ceb4375-1b97-4694-8bf8-d49d8401e12a"],
 Cell[CellGroupData[{
-Cell[2906, 69, 1069, 26, 66, "Input",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
-Cell[3978, 97, 532, 12, 76, "Output",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
+Cell[2906, 69, 1069, 26, 54, "Input",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
+Cell[3978, 97, 532, 12, 60, "Output",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
 }, Open  ]],
-Cell[4525, 112, 904, 19, 28, "Input",ExpressionUUID->"f723f54d-fc3c-49dc-a0d2-3c984d90ee8c"],
-Cell[5432, 133, 327, 9, 78, "Text",ExpressionUUID->"9d5c508c-897b-47cd-89fd-8658758cb68d"],
+Cell[4525, 112, 904, 19, 22, "Input",ExpressionUUID->"f723f54d-fc3c-49dc-a0d2-3c984d90ee8c"],
+Cell[5432, 133, 327, 9, 62, "Text",ExpressionUUID->"9d5c508c-897b-47cd-89fd-8658758cb68d"],
 Cell[CellGroupData[{
-Cell[5784, 146, 135246, 2738, 259, "Input",ExpressionUUID->"dda15b23-f3df-4720-bb2f-4f954602b7e4"],
-Cell[141033, 2886, 44282, 848, 405, "Output",ExpressionUUID->"5a9f309e-a8b0-405f-9426-701674248a6e"]
+Cell[5784, 146, 135408, 2743, 100, "Input",ExpressionUUID->"dda15b23-f3df-4720-bb2f-4f954602b7e4"],
+Cell[141195, 2891, 44282, 848, 325, "Output",ExpressionUUID->"5a9f309e-a8b0-405f-9426-701674248a6e"]
 }, Open  ]],
-Cell[185330, 3737, 150, 3, 28, "Input",ExpressionUUID->"dd479ddf-0c44-40a4-aff4-1e5acee7f6d3"],
-Cell[185483, 3742, 331, 11, 108, "Text",ExpressionUUID->"f910c63f-5e40-4ed6-a72d-fb77d90f9ba7"]
+Cell[185492, 3742, 150, 3, 22, "Input",ExpressionUUID->"dd479ddf-0c44-40a4-aff4-1e5acee7f6d3"],
+Cell[185645, 3747, 331, 11, 89, "Text",ExpressionUUID->"f910c63f-5e40-4ed6-a72d-fb77d90f9ba7"]
 }, Open  ]]
 }
 ]
