@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5833,        152]
-NotebookOptionsPosition[      4342,        110]
-NotebookOutlinePosition[      5332,        144]
-CellTagsIndexPosition[      5265,        139]
+NotebookDataLength[      6783,        173]
+NotebookOptionsPosition[      5198,        130]
+NotebookOutlinePosition[      6188,        164]
+CellTagsIndexPosition[      6121,        159]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -105,7 +105,27 @@ Cell[BoxData[
  CellChangeTimes->{3.770624949000132*^9, 3.7706276887144775`*^9, 
   3.7706294778265014`*^9, 3.7706296834099464`*^9},
  CellLabel->"Out[35]=",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "I", " ", "kinda", " ", "hard", " ", "coded", " ", "the", " ", "1", " ", 
+    "and", " ", "0"}], ",", " ", 
+   RowBox[{"any", " ", "other", " ", "way", " ", "to", " ", "do", " ", 
+    RowBox[{"it", " ", "?", " ", "Like"}], " ", "how", " ", "to", " ", "make",
+     " ", "is", " ", "count", " ", "as", " ", "binary", " ", "from", " ", 
+    "00", " ", "to", " ", 
+    RowBox[{"w", "/", "e"}], " ", "many", " ", "the", " ", "cell", " ", 
+    "there", " ", 
+    RowBox[{
+     RowBox[{"is", " ", "?", " ", "i"}], ".", "e", ".", " ", "4"}], " ", 
+    "cells", " ", "then", " ", "it", " ", "will", " ", "be", " ", "00", " ", 
+    "01", " ", "10", " ", "11"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.770631343664355*^9, 
+  3.770631448893382*^9}},ExpressionUUID->"f723f54d-fc3c-49dc-a0d2-\
+3c984d90ee8c"]
 }, Open  ]]
 },
 WindowSize->{720, 855},
@@ -138,7 +158,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 5125, 133}
+ {"Title", 5981, 153}
  }
 *)
 (*NotebookFileOutline
@@ -152,7 +172,8 @@ Cell[2006, 49, 679, 13, 122, "Text",ExpressionUUID->"7ceb4375-1b97-4694-8bf8-d49
 Cell[CellGroupData[{
 Cell[2710, 66, 1069, 26, 103, "Input",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
 Cell[3782, 94, 532, 12, 76, "Output",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
-}, Open  ]]
+}, Open  ]],
+Cell[4329, 109, 853, 18, 67, "Input",ExpressionUUID->"f723f54d-fc3c-49dc-a0d2-3c984d90ee8c"]
 }, Open  ]]
 }
 ]
