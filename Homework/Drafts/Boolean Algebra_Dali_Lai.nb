@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5308,        141]
-NotebookOptionsPosition[      3718,         98]
-NotebookOutlinePosition[      4708,        132]
-CellTagsIndexPosition[      4641,        127]
+NotebookDataLength[      5833,        152]
+NotebookOptionsPosition[      4342,        110]
+NotebookOutlinePosition[      5332,        144]
+CellTagsIndexPosition[      5265,        139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -51,13 +51,15 @@ Cell["\<\
 By combining different logic gates (AND, NAND, OR...etc.), the circuit can \
 output the desired output while receiving a certain input. 
 In programming, know as truth table (but more complicated). 
-For example\
+
+For example X or Y: \
 \>", "Text",
  CellChangeTimes->{{3.7706185419451904`*^9, 3.7706185431891994`*^9}, {
   3.7706189055727315`*^9, 3.770618912970793*^9}, {3.7706208578001738`*^9, 
   3.770620904746583*^9}, {3.7706211659235616`*^9, 3.7706212376578074`*^9}, {
   3.7706230385427237`*^9, 3.7706231048994584`*^9}, {3.7706272076400614`*^9, 
-  3.770627262749707*^9}},ExpressionUUID->"7ceb4375-1b97-4694-8bf8-\
+  3.770627262749707*^9}, {3.7706310516222467`*^9, 
+  3.7706310727507577`*^9}},ExpressionUUID->"7ceb4375-1b97-4694-8bf8-\
 d49d8401e12a"],
 
 Cell[CellGroupData[{
@@ -66,38 +68,48 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"Grid", "[", 
    RowBox[{
-    RowBox[{"BooleanTable", "[", 
-     RowBox[{
-      RowBox[{"x", "||", "y"}], ",", 
-      RowBox[{"{", "x", "}"}], ",", 
-      RowBox[{"{", "y", "}"}]}], "]"}], ",", 
+    RowBox[{"MapThread", "[", 
+     RowBox[{"Prepend", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Prepend", "[", 
+         RowBox[{
+          RowBox[{"BooleanTable", "[", 
+           RowBox[{
+            RowBox[{"x", "||", "y"}], ",", 
+            RowBox[{"{", "x", "}"}], ",", 
+            RowBox[{"{", "y", "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\"\<1\>\"", ",", "\"\<0\>\""}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<x/y\>\"", ",", "\"\<1\>\"", ",", "\"\<0\>\""}], "}"}]}],
+        "}"}]}], "]"}], ",", 
     RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], 
   "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.770624837749669*^9, 3.7706248494593515`*^9}, {
   3.770624890481673*^9, 3.7706249421165705`*^9}, {3.7706249820896354`*^9, 
-  3.7706249874991684`*^9}},
- CellLabel->"",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
+  3.7706249874991684`*^9}, {3.770629371461979*^9, 3.770629477102391*^9}, {
+  3.770629641117058*^9, 3.770629682812436*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
 
 Cell[BoxData[
  TagBox[GridBox[{
-    {"True", "True"},
-    {"True", "False"}
+    {"\<\"x/y\"\>", "\<\"1\"\>", "\<\"0\"\>"},
+    {"\<\"1\"\>", "True", "True"},
+    {"\<\"0\"\>", "True", "False"}
    },
    AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Output",
- CellChangeTimes->{3.770624949000132*^9},
- CellLabel->"Out[31]=",ExpressionUUID->"6366e1a7-d6c4-4fe9-b96b-79dcc12cd8d2"]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7706249464698987`*^9, 
-  3.7706249464928713`*^9}},ExpressionUUID->"56b1d869-49e2-4ff3-9cb9-\
-3485619ea33c"]
+ CellChangeTimes->{3.770624949000132*^9, 3.7706276887144775`*^9, 
+  3.7706294778265014`*^9, 3.7706296834099464`*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{720, 855},
-WindowMargins->{{Automatic, 531}, {55, Automatic}},
+WindowMargins->{{Automatic, 428}, {Automatic, 45}},
 DockedCells->{
   Cell[
    TextData[{
@@ -126,7 +138,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 4501, 121}
+ {"Title", 5125, 133}
  }
 *)
 (*NotebookFileOutline
@@ -136,12 +148,11 @@ Cell[580, 22, 469, 6, 156, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d
  CellTags->"Title"],
 Cell[1052, 30, 435, 7, 46, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[1490, 39, 513, 8, 60, "Text",ExpressionUUID->"efe9b06f-68d8-4084-bf8d-3f27a6c14623"],
-Cell[2006, 49, 616, 11, 100, "Text",ExpressionUUID->"7ceb4375-1b97-4694-8bf8-d49d8401e12a"],
+Cell[2006, 49, 679, 13, 122, "Text",ExpressionUUID->"7ceb4375-1b97-4694-8bf8-d49d8401e12a"],
 Cell[CellGroupData[{
-Cell[2647, 64, 559, 14, 66, "Input",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
-Cell[3209, 80, 322, 9, 48, "Output",ExpressionUUID->"6366e1a7-d6c4-4fe9-b96b-79dcc12cd8d2"]
-}, Open  ]],
-Cell[3546, 92, 156, 3, 28, InheritFromParent,ExpressionUUID->"56b1d869-49e2-4ff3-9cb9-3485619ea33c"]
+Cell[2710, 66, 1069, 26, 103, "Input",ExpressionUUID->"b93e7b6f-b232-4f01-8949-de24c398a8d7"],
+Cell[3782, 94, 532, 12, 76, "Output",ExpressionUUID->"4215ee3f-9119-4ba6-9a85-d1f7e8c88515"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
