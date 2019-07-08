@@ -1,0 +1,4289 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    164800,       4279]
+NotebookOptionsPosition[    159271,       4170]
+NotebookOutlinePosition[    159669,       4187]
+CellTagsIndexPosition[    159626,       4184]
+WindowTitle->WolframMark Report
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ StyleBox["WolframMark",
+  FontSlant->"Italic"],
+ " Benchmark Report"
+}], "Title",
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"3aaa765f-51d1-4d14-99fd-dbd70e42d0c1"],
+
+Cell[BoxData[GridBox[{
+   {"\<\"Machine Name:\"\>", "\<\"donster-blade19\"\>"},
+   {"\<\"System:\"\>", "\<\"Microsoft Windows (64-bit)\"\>"},
+   {"\<\"Date:\"\>", "\<\"July 3, 2019\"\>"},
+   {"\<\"Wolfram Language Version:\"\>", "\<\"12.0.0\"\>"},
+   {"\<\"Benchmark Result:\"\>", "\<\"2.19\"\>"}
+  },
+  GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+  GridBoxSpacings->{"Columns" -> {
+      Offset[0.27999999999999997`], {
+       Offset[1.4]}, 
+      Offset[0.27999999999999997`]}, "Rows" -> {
+      Offset[0.2], {
+       Offset[0.4]}, 
+      Offset[0.2]}}]], "Text", "Output",
+ CellMargins->{{Inherited, Inherited}, {Inherited, 30}},
+ ShowStringCharacters->False,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"5afd01ed-6c7d-420c-80a1-b22f6d2d8359"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["WolframMark",
+  FontSlant->"Italic"],
+ " Results"
+}], "Section",
+ CellFrame->False,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"80863ddb-0bca-4b6d-9208-92d7d21d4c02"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.180392, 0.54902, 0.729412], EdgeForm[None], 
+    RectangleBox[{0, 15.75}, {2.185, 16.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 14.75}, {1.886, 15.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 13.75}, {1.883, 14.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 12.75}, {1.659, 13.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 11.75}, {1.204, 12.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 10.75}, {1, 11.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 9.75}, {0.885, 10.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 8.75}, {0.841, 9.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 7.75}, {0.69, 8.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 6.75}, {0.67, 7.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 5.75}, {0.465, 6.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 4.75}, {0.436, 5.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 3.75}, {0.363, 4.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 2.75}, {0.316, 3.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 1.75}, {0.137, 2.25}]}, 
+   {GrayLevel[0.6], EdgeForm[None], RectangleBox[{0, 0.75}, {0.005, 1.25}]}},
+  AlignmentPoint->Center,
+  AspectRatio->NCache[
+    Rational[16, 15], 1.0666666666666667`],
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ColorOutput->Automatic,
+  ContentSelectable->Automatic,
+  CoordinatesToolOptions:>Automatic,
+  DisplayFunction->Identity,
+  Epilog->{{
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"2.19\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {2.195, 16}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"1.89\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {1.896, 15}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"1.88\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {1.893, 14}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"1.66\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {1.669, 13}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"1.20\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {1.214, 12}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"1.00\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {1.01, 11}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.89\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.895, 10}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.84\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.851, 9}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.69\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.7, 8}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.67\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.68, 7}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.47\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {
+      0.47500000000000003`, 6}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.44\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.446, 5}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.36\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.373, 4}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.32\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.326, 3}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.14\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {
+      0.14700000000000002`, 2}, {-1, 0}], 
+     InsetBox[
+      FormBox[
+       StyleBox[
+       "\"0.01\"", FontSize -> 11, FontFamily -> "Times New Roman", 
+        StripOnInput -> False], TraditionalForm], {0.015, 1}, {-1, 0}]}},
+  FormatType:>TraditionalForm,
+  Frame->True,
+  FrameLabel->{
+    FormBox[
+     StyleBox[
+     "\"Faster systems give larger numbers\"", FontFamily -> 
+      "Times New Roman", FontColor -> GrayLevel[0.6], StripOnInput -> False], 
+     TraditionalForm], None, 
+    FormBox[
+     StyleBox[
+     "\"WolframMark \\!\\(\\* StyleBox[\\\"System \
+Comparison\\\",\\nFontSlant->\\\"Plain\\\",\\nFontColor-> \
+GrayLevel[.6]]\\)\"", FontColor -> RGBColor[0.180392, 0.54902, 0.729412], 
+      FontSlant -> "Italic", FontFamily -> "Times New Roman", FontSize -> 18.,
+       StripOnInput -> False], TraditionalForm], None},
+  FrameStyle->{},
+  FrameTicks->{None, {{16, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\">> donster-blade19 <<\"", FontFamily -> "Times New Roman", 
+            FontWeight -> "Bold", FontSize -> 12., FontColor -> 
+            RGBColor[0.180392, 0.54902, 0.729412], StripOnInput -> False]}, {
+           StyleBox[
+           "\"Microsoft Windows (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {15, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"Intel Core i7-3770 CPU @ 3.40GHz (8 cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Linux x86 (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {14, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"3.5 GHz 6-Core Intel Xeon E5\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Mac OS X x86 (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {13, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Microsoft Windows (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {12, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.2 GHz Intel Core i7\"", FontFamily -> "Times New Roman", 
+            FontWeight -> "Bold", FontSize -> 12., StripOnInput -> False]}, {
+           StyleBox[
+           "\"Mac OS X x86 (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {11, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"3.07 GHz Core i7-950 (8 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Windows 7 Pro (64-bit) Desktop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {10, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.93 GHz Core i7-940 (8 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Linux Ubuntu (64-bit) Desktop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {9, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"Intel Core i7 CPU\"", FontFamily -> "Times New Roman", 
+            FontWeight -> "Bold", FontSize -> 12., StripOnInput -> False]}, {
+           StyleBox[
+           "\"Microsoft Windows (64-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {8, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2 \[Times] 2.26 GHz Quad Core Xeon E5520 (8 Cores)\"", 
+            FontFamily -> "Times New Roman", FontWeight -> "Bold", FontSize -> 
+            12., StripOnInput -> False]}, {
+           StyleBox[
+           "\"Mac XServe OS X (64-bit) Server\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {7, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.80 GHz Core 2 Duo Mobile T9600 (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Windows 7 Pro (64-bit) Laptop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {6, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.4 Ghz Core 2 Duo Mobile T8300 (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"MacBook OS X Snow Leopard (64-bit) Laptop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {5, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.60 GHz Core 2 Duo Mobile T7800 (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Windows XP Pro (32-bit) Laptop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {4, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2.13 GHz Core 2 Duo E6400 (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Windows Vista (32-bit) Server\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {3, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"1.6 GHz Core 2 Duo Mobile L7500 (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Windows 7 Pro (32-bit) Laptop\"", FontFamily -> 
+            "Times New Roman", FontColor -> GrayLevel[0.5], FontSize -> 11., 
+            StripOnInput -> False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {2, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"2 \[Times] 2.00 GHz G5 PowerPC (2 Cores)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Mac OS X (32-bit) Desktop\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}, {1, 
+      FormBox[
+       TagBox[
+        GridBox[{{
+           StyleBox[
+           "\"ARMv6-compatible processor rev 7 (v6l)\"", FontFamily -> 
+            "Times New Roman", FontWeight -> "Bold", FontSize -> 12., 
+            StripOnInput -> False]}, {
+           StyleBox[
+           "\"Linux ARM (32-bit)\"", FontFamily -> "Times New Roman", 
+            FontColor -> GrayLevel[0.5], FontSize -> 11., StripOnInput -> 
+            False]}}, AutoDelete -> False, 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+         ColumnAlignments -> Right], "Grid"], TraditionalForm], {0, 0}, {
+       Opacity[0], 
+       AbsoluteThickness[0]}}}, None, None},
+  FrameTicksStyle->{},
+  GridLines->{{{0.25, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {0.5, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {0.75, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {1., {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {1.25, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {1.5, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {1.75, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {2., {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}, {2.25, {
+       GrayLevel[0.6], 
+       AbsoluteDashing[{3, 6}]}}}, None},
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->900,
+  ImageSizeRaw->Automatic,
+  LabelStyle->{},
+  Method->Automatic,
+  PlotLabel->None,
+  PlotRange->{{-0.02, 2.3850000000000002`}, {0.3, 16.7}},
+  PlotRangeClipping->True,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  PreserveImageOptions->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Graphics",
+ CellMargins->{{64, Inherited}, {Inherited, Inherited}},
+ CellHorizontalScrolling->True,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"0c35a3e1-336a-4ad6-9139-17c7d41275b2"],
+
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {GridBox[{
+         {" "}
+        },
+        GridBoxItemSize->{
+         "Columns" -> {{14.399999999999999`}}, "Rows" -> {{1.}}}], GridBox[{
+         {
+          StyleBox["WolframMark",
+           FontFamily->"Times New Roman",
+           FontSize->18,
+           FontSlant->"Italic",
+           FontColor->RGBColor[0.180392, 0.54902, 0.729412]], 
+          StyleBox[
+           RowBox[{"Detailed", " ", "Timings"}],
+           FontFamily->"Times New Roman",
+           FontSize->18,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{
+         "Columns" -> {"Right", {"Left"}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{24.36}}, "Rows" -> {{1.}}}]}
+     },
+     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{6}}}]},
+   {GridBox[{
+      {
+       StyleBox["\<\" \"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Total\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 1\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 2\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 3\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 4\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 5\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 6\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 7\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 8\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 9\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 10\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 11\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 12\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 13\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 14\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"], 
+       StyleBox["\<\"Test 15\"\>",
+        FontFamily->"Times New Roman",
+        FontSize->12,
+        FontWeight->"Bold"]},
+      {GridBox[{
+         {
+          StyleBox["\<\">> donster-blade19 <<\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold",
+           FontColor->RGBColor[0.180392, 0.54902, 0.729412]]},
+         {
+          StyleBox["\<\"Microsoft Windows (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"6.33\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.29\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.39\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.35\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.27\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.22\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.96\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.53\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.05\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.96\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.26\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.30\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"Intel Core i7-3770 CPU @ 3.40GHz (8 cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Linux x86 (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"7.34\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.38\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.31\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.48\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.42\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.62\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.41\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.68\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.75\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.64\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.09\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.85\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"3.5 GHz 6-Core Intel Xeon E5\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Mac OS X x86 (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"7.35\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.61\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.36\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.28\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.30\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.43\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.99\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.29\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.67\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.6, 0., 0.819608]], 
+       StyleBox[GridBox[{
+          {"\<\"0.69\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.09\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.89\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.43\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.42\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Microsoft Windows (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"8.34\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.34\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.48\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.53\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.80\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.63\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.568627, 0., 0.815686]], 
+       StyleBox[GridBox[{
+          {"\<\"0.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.86\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.69\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.11\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"1.00\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.55\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.53\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.2 GHz Intel Core i7\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Mac OS X x86 (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"11.49\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.84\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.49\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.68\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.83\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.58\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.53\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"1.64\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"0.73\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.82\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.490196, 0.172549, 0.807843]], 
+       StyleBox[GridBox[{
+          {"\<\"0.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.12\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"1.20\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.88\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.75\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"3.07 GHz Core i7-950 (8 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Windows 7 Pro (64-bit) Desktop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"13.84\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.80\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.98\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.00\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.80\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.84\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.00\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"0.98\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.00\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.78\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.95\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.89\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.97\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.447059, 0.254902, 0.8]], 
+       StyleBox[GridBox[{
+          {"\<\"0.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.86\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.93 GHz Core i7-940 (8 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Linux Ubuntu (64-bit) Desktop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"15.65\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.94\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"0.99\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.14\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"0.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.80\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"0.81\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.88\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.51\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.89\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.31\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.16\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.14\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.41\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"0.89\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.86\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"Intel Core i7 CPU\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Microsoft Windows (64-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"16.46\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"0.93\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.72\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"0.68\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"1.23\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"0.89\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"0.85\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"1.02\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"1.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.33\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.58\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"0.15\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.529412, 0.776471]], 
+       StyleBox[GridBox[{
+          {"\<\"1.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.47\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.33\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]]},
+      {GridBox[{
+         {
+          
+          StyleBox["\<\"2 \[Times] 2.26 GHz Quad Core Xeon E5520 (8 \
+Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Mac XServe OS X (64-bit) Server\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"20.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.22\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.00\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.67\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.05\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.12\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.71\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"0.67\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.384314, 0.388235, 0.788235]], 
+       StyleBox[GridBox[{
+          {"\<\"2.79\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"1.32\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.22\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.76\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"0.94\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.08\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.80 GHz Core 2 Duo Mobile T9600 (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Windows 7 Pro (64-bit) Laptop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"20.67\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.12\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.20\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.90\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"2.04\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.17\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.15\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.61\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.53\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.61\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.19\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"1.22\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.333333, 0.607843, 0.768627]], 
+       StyleBox[GridBox[{
+          {"\<\"1.25\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.45098, 0.682353, 0.741176]], 
+       StyleBox[GridBox[{
+          {"\<\"1.56\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.4 Ghz Core 2 Duo Mobile T8300 (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"MacBook OS X Snow Leopard (64-bit) Laptop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"29.76\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.78\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"1.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"2.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.40\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"3.03\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.13\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.22\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"2.20\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"2.35\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"2.31\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.63\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"1.57\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.86\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.38\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.60 GHz Core 2 Duo Mobile T7800 (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Windows XP Pro (32-bit) Laptop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"31.77\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"1.27\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.80\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.59\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"1.44\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"3.69\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"1.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.06\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.41\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"3.25\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"1.91\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.580392, 0.694118, 0.721569]], 
+       StyleBox[GridBox[{
+          {"\<\"1.41\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"1.34\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0.9],
+        Background->RGBColor[0.376471, 0.658824, 0.756863]], 
+       StyleBox[GridBox[{
+          {"\<\"2.52\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.666667, 0.705882, 0.717647]], 
+       StyleBox[GridBox[{
+          {"\<\"2.72\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2.13 GHz Core 2 Duo E6400 (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Windows Vista (32-bit) Server\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"38.08\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.49\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.18\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"3.39\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"1.75\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"3.18\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.35\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.54\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"3.28\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.52\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"2.33\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"1.65\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"1.78\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]], 
+       StyleBox[GridBox[{
+          {"\<\"3.12\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.60\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.741176, 0.733333, 0.72549]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"1.6 GHz Core 2 Duo Mobile L7500 (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Windows 7 Pro (32-bit) Laptop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"43.81\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.17\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.75\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.74\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.26\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"4.23\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.90\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.14\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.46\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.42\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.73\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.784314, 0.764706, 0.752941]], 
+       StyleBox[GridBox[{
+          {"\<\"2.48\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"1.92\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"2.11\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.39\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]], 
+       StyleBox[GridBox[{
+          {"\<\"3.12\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.827451, 0.807843, 0.792157]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"2 \[Times] 2.00 GHz G5 PowerPC (2 Cores)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Mac OS X (32-bit) Desktop\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"100.91\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"4.61\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"4.64\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"10.91\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"4.94\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"19.50\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"5.16\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"5.01\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"5.70\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"5.21\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"7.17\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"3.33\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"4.87\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"4.28\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"9.74\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"5.84\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]]},
+      {GridBox[{
+         {
+          StyleBox["\<\"ARMv6-compatible processor rev 7 (v6l)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->12,
+           FontWeight->"Bold"]},
+         {
+          StyleBox["\<\"Linux ARM (32-bit)\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Right}}, "Rows" -> {{Baseline}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.08]}, 
+            Offset[0.2]}}], 
+       StyleBox[GridBox[{
+          {"\<\"3010.75\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"31.84\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"15.55\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"84.43\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"144.46\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"183.05\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"16.49\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"20.02\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"28.88\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"1164.78\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"37.60\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"36.45\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"4.70\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.862745, 0.858824, 0.854902]], 
+       StyleBox[GridBox[{
+          {"\<\"25.73\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"444.15\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]], 
+       StyleBox[GridBox[{
+          {"\<\"772.61\"\>"}
+         },
+         GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+         GridBoxItemSize->{"Columns" -> {{4.5}}, "Rows" -> {{3.5}}}],
+        FontFamily->"Times New Roman",
+        FontSize->10,
+        FontColor->GrayLevel[0],
+        Background->RGBColor[0.882353, 0.882353, 0.882353]]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {"Right", {"Center"}}, "Rows" -> {{Baseline}}}]},
+   {GridBox[{
+      {GridBox[{
+         {" "}
+        },
+        GridBoxItemSize->{
+         "Columns" -> {{14.399999999999999`}}, "Rows" -> {{1.}}}], GridBox[{
+         {
+          StyleBox["\<\"Timings are CPU time in seconds\"\>",
+           FontFamily->"Times New Roman",
+           FontSize->10,
+           FontColor->GrayLevel[0.6]]}
+        },
+        GridBoxItemSize->{
+         "Columns" -> {{49.800000000000004`}}, "Rows" -> {{1.}}}]}
+     }]}
+  },
+  GridBoxAlignment->{"Columns" -> {{"Left"}}, "Rows" -> {{Baseline}}},
+  GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{2}}}]], "Text",
+ CellHorizontalScrolling->True,
+ ShowStringCharacters->
+  False,ExpressionUUID->"dedf5251-abeb-496c-a253-9d805bbb822a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["WolframMark",
+  FontSlant->"Italic"],
+ " Sources"
+}], "Section",
+ CellFrame->False,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"2bd24c58-ae36-4d46-a3bc-2ff761561ae2"],
+
+Cell[CellGroupData[{
+
+Cell["Test 1: Data Fitting", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"26e56cc7-14e1-4835-9996-599ab3e7e32d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "data", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"data", "=", 
+      RowBox[{"Flatten", "[", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"x", ",", "y", ",", "z", ",", 
+            RowBox[{
+             RowBox[{"Log", "[", 
+              RowBox[{"120", " ", "x"}], "]"}], "-", 
+             RowBox[{"Abs", "[", 
+              FractionBox[
+               RowBox[{"Cos", "[", 
+                FractionBox["z", "300"], "]"}], 
+               RowBox[{"140", " ", "y"}]], "]"}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "0.2`", ",", "10", ",", "0.22`"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", "0.2`", ",", "10", ",", "0.22`"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"z", ",", "0.2`", ",", "10", ",", "0.22`"}], "}"}]}], 
+         "]"}], ",", "2"}], "]"}]}], ";", 
+     RowBox[{"FindFit", "[", 
+      RowBox[{"data", ",", 
+       RowBox[{
+        RowBox[{"Log", "[", 
+         RowBox[{"a", " ", "x"}], "]"}], "-", 
+        RowBox[{"Abs", "[", 
+         FractionBox[
+          RowBox[{"Cos", "[", 
+           RowBox[{"b", " ", "z"}], "]"}], 
+          RowBox[{"c", " ", "y"}]], "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b", ",", "c"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+       RowBox[{"AccuracyGoal", "\[Rule]", "6"}]}], "]"}], ";"}], "]"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[67]:=",ExpressionUUID->"de1878b1-44ed-4e06-bfe2-ac5544042b55"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.3679024`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.771243177160083*^9},
+ CellLabel->"Out[67]=",ExpressionUUID->"ff75c92f-6bbc-44af-aef0-062e13796cce"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 2: Digits of Pi", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"405ba83b-aa43-47b7-8889-34505cd4f579"],
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", 
+  RowBox[{
+   RowBox[{"N", "[", 
+    RowBox[{"\[Pi]", ",", "1000000"}], "]"}], ";"}], "]"}]], "Input",Expressio\
+nUUID->"3dc54de5-c4ae-45c9-85f6-33e082854e7e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 3: Discrete Fourier Transform", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"cb9b359d-2d86-4cb6-a07e-c0a236bf3f1f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "data", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"data", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "1200000", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"Fourier", "[", "data", "]"}], ",", 
+       RowBox[{"{", "11", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"4090cb25-6847-4d68-a7d0-04c2e947cc9a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.446685`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.7712066371140995`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"4e41b7db-b382-409c-a629-90de632c4e92"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 4: Eigenvalues of a Matrix", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"0a8aebb8-8e13-4bad-9faa-59f8a39d9e25"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "m"}], "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"a", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"420", ",", "420"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"b", "=", 
+      RowBox[{"DiagonalMatrix", "[", 
+       RowBox[{"RandomReal", "[", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "420", "}"}]}], "]"}], "]"}]}], ";", 
+     RowBox[{"m", "=", 
+      RowBox[{"a", ".", "b", ".", 
+       RowBox[{"Inverse", "[", "a", "]"}]}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"Eigenvalues", "[", "m", "]"}], ",", 
+       RowBox[{"{", "6", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",
+ CellLabel->"In[60]:=",ExpressionUUID->"abcc15ab-3a1c-4843-8972-40eb5ee0369f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.3801932`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.7712429151457386`*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"445cdbea-0323-4861-9e82-1eca77030a77"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 5: Elementary Functions", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"0988c7a9-9f9c-4279-9ad5-14c11f520cd5"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"m1", ",", "m2"}], "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m1", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "2.2`*^6", "}"}]}], "]"}]}], ";", 
+     RowBox[{"m2", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "2.2`*^6", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Exp", "[", "m1", "]"}], ";", 
+        RowBox[{"Sin", "[", "m1", "]"}], ";", 
+        RowBox[{"ArcTan", "[", 
+         RowBox[{"m1", ",", "m2"}], "]"}]}], ",", 
+       RowBox[{"{", "30", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"c5ada788-9bbf-4628-8c21-1aad10c087fb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 6: Gamma Function", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"a68d0212-1af7-49c6-a2d2-5eb9b4dfb763"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "a", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"a", "=", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"80000", ",", "90000"}], "}"}], ",", 
+        RowBox[{"{", "55", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Gamma", "[", "a", "]"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7712432639829087`*^9, 3.771243271357189*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"d48cbb61-c110-417b-8422-ae4ddcd041af"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{"0.3262368`", ",", 
+           RowBox[{"{", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton"], "}"}]}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          PaneBox[
+           TagBox[
+            TooltipBox[
+             StyleBox[
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{60., {1., 10.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{48., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{48., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 71, 27063859776304637600, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{48., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{48., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 71, 27063859776304637600, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{48., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 71, 27063859776304637600, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{81., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{81., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, {25, Full}}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[27063859776304637600 === $SessionID, 
+   Out[71], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{{3.7712432540484753`*^9, 3.771243273454607*^9}},
+ CellLabel->"Out[71]=",ExpressionUUID->"c344a8e1-ae6e-4af8-9b03-0ae8fa812fa0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 7: Large Integer Multiplication", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"a6d125ba-c65a-4631-be03-572eb76cf74d"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "a", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"a", "=", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          SuperscriptBox["10", "1100000"], ",", 
+          SuperscriptBox["10", 
+           RowBox[{"1100000", "+", "1"}]]}], "}"}], ",", 
+        RowBox[{"{", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"a", " ", 
+        RowBox[{"(", 
+         RowBox[{"a", "+", "1"}], ")"}]}], ",", 
+       RowBox[{"{", "20", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"4243ca1b-2ab4-4a04-8dea-c89a8ca37231"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 8: Matrix Arithmetic", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"c9cb3edd-9758-4b30-912e-40ae681358c1"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "m", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"840", ",", "840"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1.`", "\[VeryThinSpace]", "+", 
+          RowBox[{"0.5`", " ", "m"}]}], ")"}], "127"], ",", 
+       RowBox[{"{", "50", "}"}]}], "]"}], ";"}], "]"}]}], "]"}]], "Input",Expr\
+essionUUID->"04a4f9b9-af2c-4307-81d4-f15c65e8e001"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 9: Matrix Multiplication", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"dfdfc0d2-4fcb-4b16-a74d-ad80e3b83d2e"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"m1", ",", "m2"}], "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m1", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1050", ",", "1050"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"m2", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1050", ",", "1050"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"m1", ".", "m2"}], ",", 
+       RowBox[{"{", "12", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"8d2fddc2-ce95-49a0-bcf6-f97d8963bf9c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 10: Matrix Transpose", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"d9d3e420-0fea-4269-8863-e4bdcf500e49"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "m", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"2070", ",", "2070"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"Transpose", "[", "m", "]"}], ",", 
+       RowBox[{"{", "40", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"3afb6016-8d7e-44ac-b859-4311a7dc87a2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 11: Numerical Integration", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"8f34a3ed-123a-4bce-99f7-a8cb41c10d01"],
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", 
+  RowBox[{
+   RowBox[{"NIntegrate", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"2.6`", " ", "\[Pi]"}], ")"}]}], ",", 
+       RowBox[{"2.6`", " ", "\[Pi]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"2.6`", " ", "\[Pi]"}], ")"}]}], ",", 
+       RowBox[{"2.6`", " ", "\[Pi]"}]}], "}"}]}], "]"}], ";"}], 
+  "]"}]], "Input",ExpressionUUID->"3e387900-8046-40a6-a364-6341dc7ec3dd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 12: Polynomial Expansion", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"a74e56c9-1b11-49a2-863b-8df8f761fc5a"],
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", 
+  RowBox[{
+   RowBox[{"Expand", "[", 
+    RowBox[{"Times", "@@", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"c", "+", "x"}], ")"}], "3"], ",", 
+       RowBox[{"{", 
+        RowBox[{"c", ",", "350"}], "}"}]}], "]"}]}], "]"}], ";"}], 
+  "]"}]], "Input",ExpressionUUID->"8c00650a-0d54-43e5-8aea-2df790105cf6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 13: Random Number Sort", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"7509efa8-53db-4dc4-9a8a-6959d4ea73e8"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "a", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"a", "=", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "50000"}], "}"}], ",", 
+        RowBox[{"{", "520000", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"Sort", "[", "a", "]"}], ",", 
+       RowBox[{"{", "15", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"e466a57b-7260-4d8f-b6c4-a218372c4292"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 14: Singular Value Decomposition", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"5c77cb3c-90d8-4b2e-84ca-4314bb245d24"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "m", "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"860", ",", "860"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"SingularValueDecomposition", "[", "m", "]"}], ",", 
+       RowBox[{"{", "2", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expression\
+UUID->"a46fad49-0906-4a7b-8d7e-8678501f3cb1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test 15: Solving a Linear System", "Subsection",
+ CellDingbat->None,
+ FontFamily->
+  "Times New Roman",ExpressionUUID->"8a316768-3942-42eb-b3b9-091dc1f64902"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"m", ",", "v"}], "}"}], ",", 
+   RowBox[{"AbsoluteTiming", "[", 
+    RowBox[{
+     RowBox[{"SeedRandom", "[", "1", "]"}], ";", 
+     RowBox[{"m", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1150", ",", "1150"}], "}"}]}], "]"}]}], ";", 
+     RowBox[{"v", "=", 
+      RowBox[{"RandomReal", "[", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "1150", "}"}]}], "]"}]}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"LinearSolve", "[", 
+        RowBox[{"m", ",", "v"}], "]"}], ",", 
+       RowBox[{"{", "16", "}"}]}], "]"}]}], "]"}]}], "]"}]], "Input",Expressio\
+nUUID->"144d38ed-2354-4302-8b45-b8ed7f93dbb0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",
+ CellFrame->False,
+ ShowCellBracket->
+  False,ExpressionUUID->"b9dfe0a8-4eea-4644-961d-7f40c03a02ae"],
+
+Cell[CellGroupData[{
+
+Cell["[Plain Text Version]", "Subsubsection",
+ CellDingbat->None,
+ ShowCellBracket->False,
+ ShowGroupOpener->True,
+ FontFamily->"Courier",
+ FontSize->14,ExpressionUUID->"82466958-92f9-4476-b628-e96046716e46"],
+
+Cell["\<\
+=== System Information ===
+
+Machine Name:               donster-blade19
+System:                     Microsoft Windows (64-bit)
+Date:                       July 3, 2019
+Wolfram Language Version:   12.0.0
+Benchmark Result:           2.19
+
+
+=== WolframMark System Comparison ===
+
+donster-blade19                               2.19
+Microsoft Windows (64-bit)
+
+Intel Core i7-3770 CPU @ 3.40GHz (8 cores)    1.89
+Linux x86 (64-bit)
+
+3.5 GHz 6-Core Intel Xeon E5                  1.88
+Mac OS X x86 (64-bit)
+
+Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz       1.66
+Microsoft Windows (64-bit)
+
+2.2 GHz Intel Core i7                         1.20
+Mac OS X x86 (64-bit)
+
+3.07 GHz Core i7-950 (8 Cores)                1
+Windows 7 Pro (64-bit) Desktop
+
+2.93 GHz Core i7-940 (8 Cores)                0.89
+Linux Ubuntu (64-bit) Desktop
+
+Intel Core i7 CPU                             0.84
+Microsoft Windows (64-bit)
+
+2 \[Times] 2.26 GHz Quad Core Xeon E5520 (8 Cores)   0.69
+Mac XServe OS X (64-bit) Server
+
+2.80 GHz Core 2 Duo Mobile T9600 (2 Cores)    0.67
+Windows 7 Pro (64-bit) Laptop
+
+2.4 Ghz Core 2 Duo Mobile T8300 (2 Cores)     0.47
+MacBook OS X Snow Leopard (64-bit) Laptop
+
+2.60 GHz Core 2 Duo Mobile T7800 (2 Cores)    0.44
+Windows XP Pro (32-bit) Laptop
+
+2.13 GHz Core 2 Duo E6400 (2 Cores)           0.36
+Windows Vista (32-bit) Server
+
+1.6 GHz Core 2 Duo Mobile L7500 (2 Cores)     0.32
+Windows 7 Pro (32-bit) Laptop
+
+2 \[Times] 2.00 GHz G5 PowerPC (2 Cores)             0.14
+Mac OS X (32-bit) Desktop
+
+ARMv6-compatible processor rev 7 (v6l)        0.01
+Linux ARM (32-bit)
+
+(Faster systems give larger numbers)
+
+
+=== WolframMark Detailed Timings ===
+
+                                             Total   Test 1  Test 2  Test 3  \
+Test 4  Test 5  Test 6  Test 7  Test 8  Test 9   Test 10  Test 11  Test 12  \
+Test 13  Test 14  Test 15
+
+donster-blade19
+Microsoft Windows (64-bit)                   6.3     0.44    0.29    0.44    \
+0.40    0.47    0.39    0.35    0.27    0.22     0.96     0.53     0.05     \
+0.96     0.26     0.30
+
+Intel Core i7-3770 CPU @ 3.40GHz (8 cores)
+Linux x86 (64-bit)                           7.3     0.38    0.31    0.48    \
+0.42    0.62    0.41    0.40    0.68    0.40     0.75     0.64     0.09     \
+0.85     0.45     0.45
+
+3.5 GHz 6-Core Intel Xeon E5
+Mac OS X x86 (64-bit)                        7.4     0.61    0.36    0.28    \
+0.45    0.30    0.47    0.43    0.99    0.29     0.67     0.69     0.09     \
+0.89     0.43     0.42
+
+Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz
+Microsoft Windows (64-bit)                   8.3     0.47    0.34    0.48    \
+0.53    0.80    0.45    0.47    0.63    0.44     0.86     0.69     0.11     \
+1.00     0.55     0.53
+
+2.2 GHz Intel Core i7
+Mac OS X x86 (64-bit)                        11.5    0.84    0.47    0.49    \
+0.68    0.83    0.58    0.53    1.64    0.73     0.82     0.92     0.12     \
+1.20     0.88     0.75
+
+3.07 GHz Core i7-950 (8 Cores)
+Windows 7 Pro (64-bit) Desktop               13.8    0.80    0.98    1.00    \
+0.80    0.84    1.00    0.98    1.00    0.78     1.06     0.95     0.89     \
+0.97     0.92     0.86
+
+2.93 GHz Core i7-940 (8 Cores)
+Linux Ubuntu (64-bit) Desktop                15.6    0.94    0.99    1.14    \
+0.92    0.80    0.81    0.88    1.51    0.89     1.31     1.16     1.14     \
+1.41     0.89     0.86
+
+Intel Core i7 CPU
+Microsoft Windows (64-bit)                   16.5    0.93    0.72    0.68    \
+1.23    1.44    0.89    0.85    1.02    1.40     1.33     1.58     0.15     \
+1.44     1.47     1.33
+
+2 \[Times] 2.26 GHz Quad Core Xeon E5520 (8 Cores)
+Mac XServe OS X (64-bit) Server              20.1    1.06    1.22    1.44    \
+1.00    1.67    1.05    1.12    1.71    0.67     2.79     1.32     1.22     \
+1.76     0.94     1.08
+
+2.80 GHz Core 2 Duo Mobile T9600 (2 Cores)
+Windows 7 Pro (64-bit) Laptop                20.7    1.12    1.20    1.90    \
+1.06    2.04    1.17    1.15    1.61    1.53     1.61     1.19     1.06     \
+1.22     1.25     1.56
+
+2.4 Ghz Core 2 Duo Mobile T8300 (2 Cores)
+MacBook OS X Snow Leopard (64-bit) Laptop    29.8    1.78    1.40    2.44    \
+1.40    3.03    1.13    1.22    2.20    2.35     2.31     1.63     1.57     \
+2.06     2.86     2.38
+
+2.60 GHz Core 2 Duo Mobile T7800 (2 Cores)
+Windows XP Pro (32-bit) Laptop               31.8    1.27    1.80    2.59    \
+1.44    3.69    1.92    2.06    2.41    3.25     1.91     1.45     1.41     \
+1.34     2.52     2.72
+
+2.13 GHz Core 2 Duo E6400 (2 Cores)
+Windows Vista (32-bit) Server                38.1    2.49    2.18    3.39    \
+1.75    3.18    2.35    2.54    2.92    3.28     2.52     2.33     1.65     \
+1.78     3.12     2.60
+
+1.6 GHz Core 2 Duo Mobile L7500 (2 Cores)
+Windows 7 Pro (32-bit) Laptop                43.8    2.17    2.75    3.74    \
+2.26    4.23    2.90    3.14    3.46    3.42     2.73     2.48     1.92     \
+2.11     3.39     3.12
+
+2 \[Times] 2.00 GHz G5 PowerPC (2 Cores)
+Mac OS X (32-bit) Desktop                    100.9   4.61    4.64    10.91   \
+4.94    19.50   5.16    5.01    5.70    5.21     7.17     3.33     4.87     \
+4.28     9.74     5.84
+
+ARMv6-compatible processor rev 7 (v6l)
+Linux ARM (32-bit)                           3011.0  31.84   15.55   84.43   \
+144.50  183.10  16.49   20.02   28.88   1165.00  37.60    36.45    4.70     \
+25.73    444.20   772.60
+
+(Timings are CPU time in seconds)
+\
+\>", "Text",
+ PageWidth->DirectedInfinity[1],
+ CellHorizontalScrolling->True,
+ FontFamily->"Courier",
+ FontSize->10,ExpressionUUID->"24711e18-982a-4c22-9a6f-2af4edee4ac8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",
+ CellFrame->False,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {0, 0}},
+ FontSize->8,ExpressionUUID->"8ea182b2-81f5-41e5-8f45-da8bc332ea19"],
+
+Cell[TextData[{
+ "This ",
+ StyleBox["WolframMark",
+  FontSlant->"Italic"],
+ " report was created with Wolfram Language ",
+ "12.0.0",
+ ". ",
+ StyleBox["WolframMark",
+  FontSlant->"Italic"],
+ " is a trademark of Wolfram Research, Inc."
+}], "SmallText",
+ ShowCellBracket->
+  False,ExpressionUUID->"96f386e5-f656-4ade-b83e-8d1098e97015"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowTitle->"WolframMark Report",
+FrontEndVersion->"12.0 \:95dc\:65bc  Microsoft Windows (64-bit) (2019\:5e744\
+\:67088\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[612, 23, 188, 6, 92, "Title",ExpressionUUID->"3aaa765f-51d1-4d14-99fd-dbd70e42d0c1"],
+Cell[803, 31, 775, 18, 124, "Text",ExpressionUUID->"5afd01ed-6c7d-420c-80a1-b22f6d2d8359"],
+Cell[CellGroupData[{
+Cell[1603, 53, 200, 7, 59, "Section",ExpressionUUID->"80863ddb-0bca-4b6d-9208-92d7d21d4c02"],
+Cell[1806, 62, 17804, 427, 748, "Graphics",ExpressionUUID->"0c35a3e1-336a-4ad6-9139-17c7d41275b2"],
+Cell[19613, 491, 109296, 2744, 771, "Text",ExpressionUUID->"dedf5251-abeb-496c-a253-9d805bbb822a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[128946, 3240, 200, 7, 59, "Section",ExpressionUUID->"2bd24c58-ae36-4d46-a3bc-2ff761561ae2"],
+Cell[CellGroupData[{
+Cell[129171, 3251, 152, 3, 50, "Subsection",ExpressionUUID->"26e56cc7-14e1-4835-9996-599ab3e7e32d"],
+Cell[CellGroupData[{
+Cell[129348, 3258, 1650, 44, 258, "Input",ExpressionUUID->"de1878b1-44ed-4e06-bfe2-ac5544042b55"],
+Cell[131001, 3304, 206, 4, 32, "Output",ExpressionUUID->"ff75c92f-6bbc-44af-aef0-062e13796cce"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[131256, 3314, 152, 3, 50, "Subsection",ExpressionUUID->"405ba83b-aa43-47b7-8889-34505cd4f579"],
+Cell[131411, 3319, 206, 5, 45, "Input",ExpressionUUID->"3dc54de5-c4ae-45c9-85f6-33e082854e7e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[131654, 3329, 166, 3, 50, "Subsection",ExpressionUUID->"cb9b359d-2d86-4cb6-a07e-c0a236bf3f1f"],
+Cell[CellGroupData[{
+Cell[131845, 3336, 592, 16, 119, "Input",ExpressionUUID->"4090cb25-6847-4d68-a7d0-04c2e947cc9a"],
+Cell[132440, 3354, 207, 4, 32, "Output",ExpressionUUID->"4e41b7db-b382-409c-a629-90de632c4e92"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[132696, 3364, 163, 3, 50, "Subsection",ExpressionUUID->"0a8aebb8-8e13-4bad-9faa-59f8a39d9e25"],
+Cell[CellGroupData[{
+Cell[132884, 3371, 970, 27, 193, "Input",ExpressionUUID->"abcc15ab-3a1c-4843-8972-40eb5ee0369f"],
+Cell[133857, 3400, 208, 4, 32, "Output",ExpressionUUID->"445cdbea-0323-4861-9e82-1eca77030a77"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[134114, 3410, 160, 3, 50, "Subsection",ExpressionUUID->"0988c7a9-9f9c-4279-9ad5-14c11f520cd5"],
+Cell[134277, 3415, 898, 26, 230, "Input",ExpressionUUID->"c5ada788-9bbf-4628-8c21-1aad10c087fb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[135212, 3446, 154, 3, 50, "Subsection",ExpressionUUID->"a68d0212-1af7-49c6-a2d2-5eb9b4dfb763"],
+Cell[CellGroupData[{
+Cell[135391, 3453, 600, 15, 45, "Input",ExpressionUUID->"d48cbb61-c110-417b-8422-ae4ddcd041af"],
+Cell[135994, 3470, 8971, 232, 92, "Output",ExpressionUUID->"c344a8e1-ae6e-4af8-9b03-0ae8fa812fa0"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[145014, 3708, 168, 3, 50, "Subsection",ExpressionUUID->"a6d125ba-c65a-4631-be03-572eb76cf74d"],
+Cell[145185, 3713, 746, 22, 130, "Input",ExpressionUUID->"4243ca1b-2ab4-4a04-8dea-c89a8ca37231"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[145968, 3740, 157, 3, 50, "Subsection",ExpressionUUID->"c9cb3edd-9758-4b30-912e-40ae681358c1"],
+Cell[146128, 3745, 701, 20, 127, "Input",ExpressionUUID->"04a4f9b9-af2c-4307-81d4-f15c65e8e001"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[146866, 3770, 161, 3, 50, "Subsection",ExpressionUUID->"dfdfc0d2-4fcb-4b16-a74d-ad80e3b83d2e"],
+Cell[147030, 3775, 805, 24, 156, "Input",ExpressionUUID->"8d2fddc2-ce95-49a0-bcf6-f97d8963bf9c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[147872, 3804, 157, 3, 50, "Subsection",ExpressionUUID->"d9d3e420-0fea-4269-8863-e4bdcf500e49"],
+Cell[148032, 3809, 593, 17, 45, "Input",ExpressionUUID->"3afb6016-8d7e-44ac-b859-4311a7dc87a2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[148662, 3831, 162, 3, 50, "Subsection",ExpressionUUID->"8f34a3ed-123a-4bce-99f7-a8cb41c10d01"],
+Cell[148827, 3836, 708, 21, 48, "Input",ExpressionUUID->"3e387900-8046-40a6-a364-6341dc7ec3dd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[149572, 3862, 161, 3, 50, "Subsection",ExpressionUUID->"a74e56c9-1b11-49a2-863b-8df8f761fc5a"],
+Cell[149736, 3867, 416, 12, 48, "Input",ExpressionUUID->"8c00650a-0d54-43e5-8aea-2df790105cf6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[150189, 3884, 159, 3, 50, "Subsection",ExpressionUUID->"7509efa8-53db-4dc4-9a8a-6959d4ea73e8"],
+Cell[150351, 3889, 599, 17, 119, "Input",ExpressionUUID->"e466a57b-7260-4d8f-b6c4-a218372c4292"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[150987, 3911, 169, 3, 50, "Subsection",ExpressionUUID->"5c77cb3c-90d8-4b2e-84ca-4314bb245d24"],
+Cell[151159, 3916, 607, 17, 119, "Input",ExpressionUUID->"a46fad49-0906-4a7b-8d7e-8678501f3cb1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[151803, 3938, 164, 3, 50, "Subsection",ExpressionUUID->"8a316768-3942-42eb-b3b9-091dc1f64902"],
+Cell[151970, 3943, 810, 24, 156, "Input",ExpressionUUID->"144d38ed-2354-4302-8b45-b8ed7f93dbb0"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[152829, 3973, 121, 3, 62, "Section",ExpressionUUID->"b9dfe0a8-4eea-4644-961d-7f40c03a02ae"],
+Cell[CellGroupData[{
+Cell[152975, 3980, 208, 5, 37, "Subsubsection",ExpressionUUID->"82466958-92f9-4476-b628-e96046716e46"],
+Cell[153186, 3987, 5508, 155, 1752, "Text",ExpressionUUID->"24711e18-982a-4c22-9a6f-2af4edee4ac8"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[158743, 4148, 164, 4, 12, "Section",ExpressionUUID->"8ea182b2-81f5-41e5-8f45-da8bc332ea19"],
+Cell[158910, 4154, 333, 12, 30, "SmallText",ExpressionUUID->"96f386e5-f656-4ade-b83e-8d1098e97015"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
